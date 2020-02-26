@@ -1,0 +1,247 @@
+
+
+* {box-sizing: border-box;}
+
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.main-container {
+    background-image: linear-gradient(rgba(0,0,0, 0.55),rgba(0,0,0, 0.55)),url(images/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 55vh;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+}
+
+header {
+    margin-top: -25px;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+h1 {
+    color: #fdfdfd;
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.main-btn {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3%
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+#start-now {
+    display: block;
+    font-size: 1.2em;
+    background: #fff;
+    padding: 7px 19px;
+    background: transparent;
+    color: #ad974f;
+    border: 2px solid #ad974f;
+}
+
+
+/* form section */
+.form-section {
+    display: none;
+    width: 30%;
+    background-color: #ad974f;
+    height: 40vh;  
+    margin: 0 auto;
+    margin-top: -3em;
+    overflow: auto;
+    border: 2px solid #fff;
+}
+
+#form {
+    text-align: center;
+    color: #fff;
+    padding: 1.3em;
+    height: 0;
+}
+
+label {
+    margin-right: 5px;
+}
+
+.question-form, .answer-form {
+    display: flex;
+    justify-content: center;
+
+}
+
+textarea:focus {
+    outline: none;
+}
+
+
+
+#add-btn {
+    margin-top: 17px;
+    background: #fff;
+    padding: 6px 15px;
+    color: black;
+    border-radius: 8px;
+    font-size: 1.2em;
+    border: 2px solid black;
+}
+
+#close-btn {
+    position: relative;
+    left: 85%;
+    top: 5%;
+    width: 45px;
+    height: 24px;
+    background: #888;
+    color: #fdfdfd;
+    z-index: 2;
+    font-size: .75em;
+    text-align: center;
+    line-height: 1.9;
+    cursor: pointer;
+    
+}
+
+/* Flash Card Section */
+.flashcard-section {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+.new-card {
+    display: inline-block;
+    width: 30%;
+    height: 30vh;
+    text-align: center;
+    padding-top: 10px;
+    background: #565052;
+    color: white;
+    margin-top: 5px;
+    margin-right: 1em;
+    overflow: auto;
+    box-shadow: 2px 2px 5px rgba(173,151,79,1)
+}
+
+p:first-child {
+    text-align: left;
+    margin-left: 15px;
+    font-size: 1.25em;
+}
+
+p:last-child {
+    margin-top: 5px;
+
+}
+
+.new-btn {
+    display: block;
+    background: #ad974f;
+    color: #fff;
+    border-radius: 19px;
+    margin: auto;
+    padding: 5px 25px;
+    text-transform: uppercase;
+    position: relative;
+    top: 15%;
+    margin-bottom: 25px;
+}
+
+.hide-card {
+    display: none;
+}
+
+
+.show-card {
+    display: block;
+    background: #fff;
+    color: #ad974f;
+    width: 95%;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 15px;
+    font-weight: 700;
+    word-break: break-all;
+}
+
+
+/* Pop-up modal warning */
+.warning-section {
+    display: none;
+    width: 70%;
+    height: 80vh;
+    color: #fff;
+    opacity: 0.85;
+    background: #222;
+    position: absolute;
+    left: 15%;
+    top: 0;
+    z-index: 2;
+    text-align: center;
+}
+
+.warning-section > h5 {
+    color: red;
+    text-align: center;
+    font-size: 2.5em;
+    background: #000;
+    margin-top: 0;
+    padding: 35px;
+    opacity: 1 !important;
+}
+
+
+/* remove outline on all buttons */
+button:focus {
+    outline: none;
+}
+
+
+#try-again {
+    background: red;
+    color: white;
+    width: 15%;
+    height: 5vh;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+
+
+/* random card*/
+#toggle-random {
+    display: block;
+    margin: auto;
+}
+
+
+#random-bar {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+

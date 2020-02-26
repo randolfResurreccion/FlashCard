@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flash Card</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="main-container">
+            <!-- header -->
+            <header>
+                <h1>flash card</h1>
+            </header>
+
+            <div class="main-btn">
+                <button class="primary-btn" id="start-now">Add Question</button>
+            </div>
+
+            <!-- form section -->
+            <div class="form-section">
+                <span id="close-btn">close</span>
+                <form action="" id="form">
+                    <div class="question-form">
+                        <label for="">Question:</label>
+                        <!-- <input type="text" id="question" required> -->
+                        <textarea name="" id="question" cols="25" rows="5"></textarea>
+                    </div>
+                    <br>
+                    <div class="answer-form">
+                        <label for="">Answer:</label>
+                        <!-- <input type="text" id="answer" required> -->
+                        <textarea name="" id="answer" cols="25" rows="5"></textarea>
+                    </div>
+                    <br>
+                    <button id="add-btn">Click to Add</button>
+                </form>
+                <p id="form-instructions">
+                </p>
+            </div>
+
+        </div>
+
+        <!-- display div for our flash card -->
+        <div class="flashcard-section"> </div>
+
+        <!-- warning section -->
+        <div class="warning-section">
+            <h5>Warning!!</h5>
+            <p>make sure the Question and Answer Field is not empty</p>
+            <p>press button to try again!</p>
+            <button id="try-again">Try Again</button>
+        </div>
+    </div>
+
+    <script src="flashcard.js"></script>
+</body>
+
+</html>
